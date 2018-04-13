@@ -1,6 +1,10 @@
 function cocktail() {
-const url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=RUM'
-
+  console.log(liquor)
+  if (liquor === 'RUM') {
+    var url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum'
+  } else {
+    var url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila'
+  }
 fetch(url)
 .then(response => response.json())
 .then(data => newDrink(data))
