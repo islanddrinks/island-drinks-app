@@ -11,6 +11,7 @@ body {
 .header {
   margin: 1em;
   color: white;
+  background: rgba(126, 192, 238, .75);
 }
 
 .header h2 {
