@@ -58,13 +58,13 @@ function addRecipe(data) {
   list = document.createElement('ul')
   list.innerHTML = 
   `
-  <li> ${drinks.strIngredient1}: ${drinks.strMeasure1}</li>
-  <li> ${drinks.strIngredient2}: ${drinks.strMeasure2}</li>
-  <li> ${drinks.strIngredient3}: ${drinks.strMeasure3}</li>
-  <li> ${drinks.strIngredient4}: ${drinks.strMeasure4}</li>
-  <li> ${drinks.strIngredient5}: ${drinks.strMeasure5}</li>
-  <li> ${drinks.strIngredient6}: ${drinks.strMeasure6}</li>
-  <li> ${drinks.strIngredient7}: ${drinks.strMeasure7}</li>
+  <li> ${drinks.strIngredient1} ${drinks.strMeasure1}</li>
+  <li> ${drinks.strIngredient2} ${drinks.strMeasure2}</li>
+  <li> ${drinks.strIngredient3} ${drinks.strMeasure3}</li>
+  <li> ${drinks.strIngredient4} ${drinks.strMeasure4}</li>
+  <li> ${drinks.strIngredient5} ${drinks.strMeasure5}</li>
+  <li> ${drinks.strIngredient6} ${drinks.strMeasure6}</li>
+  <li> ${drinks.strIngredient7} ${drinks.strMeasure7}</li>
   `
   description = document.createElement('p')
   description.innerText = drinks.strInstructions
