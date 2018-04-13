@@ -112,6 +112,7 @@ function rotateWheel() {
   spinTime += 30;
   if (spinTime >= spinTimeTotal) {
     stopRotateWheel();
+    cocktail()
     return;
   }
   var spinAngle =
@@ -129,6 +130,7 @@ function stopRotateWheel() {
   ctx.save();
   ctx.font = "bold 30px Helvetica, Arial";
   var text = options[index];
+  liquor = text
   ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
   ctx.restore();
 }
