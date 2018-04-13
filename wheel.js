@@ -103,7 +103,7 @@ function drawRouletteWheel() {
 
 function spin() {
   spinAngleStart = Math.random() * 10 + 10;
-  spinTime = 0;
+  spinTime = 20;
   spinTimeTotal = Math.random() * 3 + 4 * 1000;
   rotateWheel();
 }
