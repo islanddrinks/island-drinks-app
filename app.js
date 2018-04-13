@@ -51,11 +51,17 @@ function addRecipe(data) {
   console.log(data)
   let drinks = data.drinks[0]
   ingredients = document.querySelector('.ingredients') 
+  if (ingredients.children.length > 0) {
+  clear()
+  }
   heading = document.createElement('h2')
+  list = document.createElement('ul')
+  description = document.createElement('p')
+  
+  
   heading.innerText = 'Recipe'
   console.log(data)
   console.log(drinks.strIngredient1)
-  list = document.createElement('ul')
   list.innerHTML = 
   `
   <li> ${drinks.strIngredient1} ${drinks.strMeasure1}</li>
@@ -66,11 +72,16 @@ function addRecipe(data) {
   <li> ${drinks.strIngredient6} ${drinks.strMeasure6}</li>
   <li> ${drinks.strIngredient7} ${drinks.strMeasure7}</li>
   `
-  description = document.createElement('p')
   description.innerText = drinks.strInstructions
   ingredients.appendChild(heading)
   ingredients.appendChild(list)
   ingredients.appendChild(description)
+}
+
+function clear () {
+  heading.innerHTML = ''
+  list.innerHTML = ''
+  description.innerHTML = ''
 }
 
 
