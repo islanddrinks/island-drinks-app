@@ -1,7 +1,10 @@
 var options = [
   "RUM",
   "TEQUILA",
-  "MEZCAL",
+  "RUM",
+  "TEQUILA",
+  "RUM",
+  "TEQUILA",
 ];
 
 var startAngle = 0;
@@ -54,7 +57,7 @@ function drawRouletteWheel() {
     ctx.strokeStyle = "black";
     ctx.lineWidth = 2;
 
-    ctx.font = "bold 25px Helvetica, Arial";
+    ctx.font = "bold 25px 'Oleo Script', cursive";
 
     for (var i = 0; i < options.length; i++) {
       var angle = startAngle + i * arc;
