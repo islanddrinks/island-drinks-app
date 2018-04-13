@@ -9,18 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="header">
     <h2>We've all been there: sitting on a chair on a Tropical Island, thirsty as can be, but you have no idea what drink to get.
         You're a person of adventure, and you are always down to try new drinks that you've never even heard of.  But which one?
     </h2>
 
     <h3>Well worry no longer.  Why bother having the waiter run through the entire list of drinks, when you can just give the wheel a spin?</h3>
-
+</div>
     <div class="wheel">
-    <input type="button" value="spin" id='spin' />
-<canvas id="canvas"></canvas>
+        <input type="button" value="spin" style="float:left;" id='spin' />
+<canvas id="canvas" width="500" height="500"></canvas>
     </div>
     <div class="drink-picture">
+        <h1 class="drink-name"></h1>
+        <img class="drink-image" src="" alt="">
     </div>
     <p>&copy;Copyright Kuberra, Carssow, Jones, Decker LLC</p>
     <script src="app.js"></script>
@@ -31,3 +33,5 @@
     <!-- <input type="button" value="spin" style="float:left;" id='spin' />
     <canvas id="canvas" width="500" height="500"></canvas>
     <script src="wheel.js"></script> -->
+
+
