@@ -103,8 +103,8 @@ function drawRouletteWheel() {
 
 function spin() {
   spinAngleStart = Math.random() * 10 + 10;
-  spinTime = 20;
-  spinTimeTotal = Math.random() * 3 + 4 * 1000;
+  spinTime = 0;
+  spinTimeTotal = Math.random() * 3 + 4 * 1500;
   rotateWheel();
 }
 
@@ -113,6 +113,7 @@ function rotateWheel() {
   if (spinTime >= spinTimeTotal) {
     stopRotateWheel();
     cocktail()
+    recipe(id)
     return;
   }
   var spinAngle =
