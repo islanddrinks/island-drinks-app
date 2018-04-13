@@ -6,21 +6,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
 .header {
   margin: 1em;
   color: white;
+}
+
+.header h2 {
+  text-align: center;
   font-weight: lighter;
-  background-color: ;
+}
+
+.header h3 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.wheel #spin {
+  padding: 100px 200px;
 }
 
 #canvas {
   font-family: 'Oleo Script', cursive;
   display: flex;
-
 }
 
 .wheel {
